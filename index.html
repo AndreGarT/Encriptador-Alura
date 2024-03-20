@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <div class="principal">
+        <div class="contenedor-principal">
+            <div class="contenedor-logo">
+                <img src="img/Logo.png" alt="logo alura">
+            </div>
+            <div class="contenedor-contenido">
+                <div class="contenedor-texto">
+                    <textarea name="texto" class="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí" id="texto" onclick="this.select()"></textarea>
+                </div>
+                <div>
+                    <div class="mensaje-error">
+                        <h4 id="error-h4"> &#11199; Solo letras minusculas y sin acentos</h4>
+                    </div>
+                    <div class="botones">
+                        <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                        <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-respuesta">
+            <div id="contenedor-imagen">
+                <img src="img/Muñeco.png" alt="muneco" class="imagen">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <div id="respuesta-boton">
+                <p id="texto-respuesta"></p>
+                <div>
+                    <h4 id="copiado"></h4>
+                    <button class="btn-copiar" onclick="copiarContenido()">Copiar</button>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy Desarrollado por André García Trujillo - 2024</p>
+    </footer>
+    <script src="app.js" defer></script> 
+</body>
+</html>
